@@ -1,5 +1,5 @@
-from hamiltonian import Hamiltonian
-from spin import Spin
+from .hamiltonian import Hamiltonian
+from .spin import Spin
 
 import numpy as np
 

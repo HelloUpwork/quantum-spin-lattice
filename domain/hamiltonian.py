@@ -1,6 +1,6 @@
 import numpy as np
 
-from spin import Spin
+from .spin import Spin
 class Hamiltonian:
     """Class to construct and manage the Hamiltonian of the system, including next-nearest neighbor interactions."""
     def __init__(self, lattice, J1=1.0, J2=0.1):

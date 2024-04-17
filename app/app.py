@@ -1,9 +1,4 @@
-from lattice import HoneycombLattice
-from spin import Spin
-from hamiltonian import Hamiltonian
-from simulation import Simulation
-from plotter import Plotter
-from partition import ThermalProperties
+from domain import HoneycombLattice, Spin, Hamiltonian, Simulation, Plotter, ThermalProperties
 
 import numpy as np
 import pickle
