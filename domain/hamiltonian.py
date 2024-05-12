@@ -37,8 +37,12 @@ class Hamiltonian:
 
     def kron_prod(self, N, idx, op):
         """Kronecker product of identity matrices with a Pauli matrix at position idx."""
+        # We just want to make the tensor product.
+        # If you think about it, a series of tensor products can be thought of as a list of matrices...
         matrices = [np.eye(2) if k != idx else op for k in range(N)]
         result = matrices[0]
+
+        # ... that are tensor'd together. Calculationally, these are Kronecker products.
         for mat in matrices[1:]:
             result = np.kron(result, mat)
         return result

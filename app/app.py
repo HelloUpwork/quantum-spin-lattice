@@ -2,6 +2,7 @@ from domain import HoneycombLattice, Spin, Hamiltonian, Simulation, Plotter, The
 
 import numpy as np
 import pickle
+
 class App:
     def __init__(self):
         #Todo: Create a SimulationConfiguration class
